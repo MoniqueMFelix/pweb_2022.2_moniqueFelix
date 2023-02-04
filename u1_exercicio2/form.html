@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulário</title>
+    <meta
+      name="description"
+      content="A starter example with all elements and components used in Pico design system. Built with Pico CSS."
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+    <link rel="canonical" href="https://picocss.com/examples/preview/" />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+  </head>
+
+  <body>
+    <form action="resposta.html" method="get">
+      <h1>Formulário</h1>
+      <label>Nome: <input type="text" /></label>
+      <label>Senha: <input type="password" /></label>
+      <br />
+      <p>Escolha a sua opção de comida:</p>
+      <label for="churrasco">
+        <input type="checkbox" id="churrasco" value="Churrasco" />
+        Churrasco
+      </label>
+      <label for="massas">
+        <input type="checkbox" id="churrasco" value="Massas" />
+        Massas
+      </label>
+      <label for="peixes">
+        <input type="checkbox" id="peixes" value="Peixes" />
+        Peixes
+      </label>
+      <br />
+      <p>Informe o sexo:</p>
+      <label for="masculino">
+        <input type="radio" id="masculino" value="Masculino" />
+        Masculino
+      </label>
+
+      <label for="feminino">
+        <input type="radio" id="feminino" value="Feminino" />
+        Feminino
+      </label>
+
+      <label for="naoInformar">
+        <input type="radio" id="naoInformar" value="naoInformar" />
+        Prefiro não informar
+      </label>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Apagar" />
+    </form>
+  </body>
+</html>

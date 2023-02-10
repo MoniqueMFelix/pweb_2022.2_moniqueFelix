@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <meta codigoSecreto="279761732" />
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <title>PWeb - by Monique de Medeiros</title>
+  </head>
+  <body>
+    <div class="w3-bar w3-pale-yellow w3-mobile w3-xlarge">
+      <a href="index.html" class="w3-bar-item w3-button">Início</a>
+      <a href="adicionarPessoa.html" class="w3-bar-item w3-button"
+        >Adicionar Pessoa</a
+      >
+      <a href="listarPessoas.html" class="w3-bar-item w3-button"
+        >Listar Pessoas</a
+      >
+      <a href="noticias.html" class="w3-bar-item w3-button w3-right"
+        >Notícias</a
+      >
+      <a href="sobre.html" class="w3-bar-item w3-button w3-right"
+        >Sobre o site</a
+      >
+      <a href="contato.html" class="w3-bar-item w3-button w3-right">Contato</a>
+    </div>
+    <main class="container-fluid">
+      <h1>Formulário para editar pessoas:</h1>
+      <section>
+        <form action="">
+          <div class="grid">
+            <span>
+              <label for="nome">Seu nomezinho*:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Nome Completo"
+              />
+            </span>
+            <span>
+              <label for="email">e-Mail*:</label>
+              <input type="email" id="email" name="email" placeholder="nome@dominio.com" />
+              <small>Nunca divulgaremos :)</small>
+            </span>
+            <span>
+              <label for="dataNascimento">Data de Nascimento*:</label>
+              <input
+                type="date"
+                id="dataNascimento"
+                name="dataNascimento"
+                placeholder="dataNascimento"
+              />
+            </span>
+          </div>
+          <div class="grid">
+            <fieldset>
+              <legend>Gênero*:</legend>
+              <label for="radio-1">
+                <input
+                  type="radio"
+                  id="radio-1"
+                  name="radio"
+                  value="radio-1"
+                  checked
+                />
+                Masculino
+              </label>
+              <label for="radio-2">
+                <input type="radio" id="radio-2" name="radio" value="radio-2" />
+                Feminino
+              </label>
+              <label for="radio-3">
+                <input type="radio" id="radio-3" name="radio" value="radio-3" />
+                Não informar
+              </label>
+            </fieldset>
+          </div>
+          <div class="grid">
+            <input
+              type="submit"
+              value="Adicionar!"
+              onclick="event.preventDefault()"
+            />
+            <input
+              type="reset"
+              value="Limpar"
+              onclick="event.preventDefault()"
+            />
+          </div>
+          <p>* Campo obrigatório</p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

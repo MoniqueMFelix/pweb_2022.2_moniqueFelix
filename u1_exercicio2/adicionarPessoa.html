@@ -15,30 +15,47 @@
     <title>PWeb - by Monique de Medeiros</title>
   </head>
   <body>
-    <div class="w3-bar w3-pale-yellow w3-mobile w3-xlarge">
-      <a href="index.html" class="w3-bar-item w3-button">Início</a>
-      <a href="adicionarPessoa.html" class="w3-bar-item w3-button"
+    <div class="w3-bar w3-black w3-xlarge">
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-pale-yellow w3-mobile"
+        >Início</a
+      >
+      <a
+        href="adicionarPessoa.html"
+        class="w3-bar-item w3-button w3-pale-yellow w3-mobile"
         >Adicionar Pessoa</a
       >
-      <a href="listarPessoas.html" class="w3-bar-item w3-button"
+      <a
+        href="listarPessoas.html"
+        class="w3-bar-item w3-button w3-pale-yellow w3-mobile"
         >Listar Pessoas</a
       >
-      <a href="noticias.html" class="w3-bar-item w3-button w3-right"
+      <a
+        href="noticias.html"
+        class="w3-bar-item w3-button w3-pale-yellow w3-mobile w3-right"
         >Notícias</a
       >
-      <a href="sobre.html" class="w3-bar-item w3-button w3-right"
+      <a
+        href="sobre.html"
+        class="w3-bar-item w3-button w3-pale-yellow w3-mobile w3-right"
         >Sobre o site</a
       >
-      <a href="contato.html" class="w3-bar-item w3-button w3-right">Contato</a>
+      <a
+        href="contato.html"
+        class="w3-bar-item w3-button w3-pale-yellow w3-mobile w3-right"
+        >Contato</a
+      >
     </div>
     <main class="container-fluid">
       <h1>Formulário para adicionar pessoas:</h1>
       <section>
-        <form action="">
+        <form action="adicionadaComSucesso.html">
           <div class="grid">
             <span>
               <label for="nome">Seu nomezinho*:</label>
               <input
+              required
                 type="text"
                 id="nome"
                 name="nome"
@@ -47,12 +64,19 @@
             </span>
             <span>
               <label for="email">e-Mail*:</label>
-              <input type="email" id="email" name="email" placeholder="nome@dominio.com" />
+              <input
+              required
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nome@dominio.com"
+              />
               <small>Nunca divulgaremos :)</small>
             </span>
             <span>
               <label for="dataNascimento">Data de Nascimento*:</label>
               <input
+              required
                 type="date"
                 id="dataNascimento"
                 name="dataNascimento"
@@ -65,6 +89,7 @@
               <legend>Gênero*:</legend>
               <label for="radio-1">
                 <input
+                required
                   type="radio"
                   id="radio-1"
                   name="radio"
@@ -74,7 +99,9 @@
                 Masculino
               </label>
               <label for="radio-2">
-                <input type="radio" id="radio-2" name="radio" value="radio-2" />
+                <input
+                required
+                type="radio" id="radio-2" name="radio" value="radio-2" />
                 Feminino
               </label>
               <label for="radio-3">
